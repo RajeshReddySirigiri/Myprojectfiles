@@ -1,0 +1,39 @@
+Day-24
+-------
+Check boxes 
+Dropdowns
+----------
+1) Drop down having select tag in DOM.
+2) DropDown not having select tag in DOM ( input/div) - Bootstrap dropdown
+3) Auto Suggest drop down ( Dynamic)
+
+Select class
+
+
+Assignment
+-------
+1) Handle dropdown without using Select Class 
+
+Select Country & State
+https://phppot.com/demo/jquery-dependent-dropdown-list-countries-and-states/
+
+
+
+
+----------------------------------------------------------------------
+
+FileInputStream file = new FileInputStream("path of excel file");
+XSSFWorkbok wb = new XSSFWorkbook(file);
+XSSFSheet st = wb.getSheet("");
+int TotalrowCount = st.getLastRowNum();
+int TotalcellCount = st.getRow().getLastCellNum();
+
+for(r=0; r<=TotalrowCount; r++ ){
+
+       XSSFRow CurrentRow = st.getRow(r);
+       for(n=0; n<cellCount; n++){
+	     XSSFCell Cell = CurrentRow.getCell(c);
+	     Syso(Cell.toString());	
+}
+syso("");
+}
